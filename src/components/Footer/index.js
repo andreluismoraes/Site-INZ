@@ -16,7 +16,7 @@ const Footer = () =>(
                         </div>
 
                         <div className="col-lg-3 col-md-6 footer-links">
-                            <h4>Useful Links</h4>
+                            <h4>Links</h4>
                             <ul>
                             <li><i className="ion-ios-arrow-right"></i> <Link to="#"/>Home</li>
                             <li><i className="ion-ios-arrow-right"></i> <Link to="#"/>Sobre nós</li>
