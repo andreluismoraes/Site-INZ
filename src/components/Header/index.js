@@ -1,4 +1,5 @@
 import React, { Fragment } from 'react'
+import {Link} from 'react-router-dom'
 
 const Header = () =>(
     <Fragment>
@@ -12,11 +13,12 @@ const Header = () =>(
 
             <nav id="nav-menu-container">
                 <ul className="nav-menu">
-                <li className="menu-active"><a href="#intro">Home</a></li>
-                <li><a href="#about">Sobre Nós</a></li>
-                <li><a href="#services">Serviços</a></li>
-                <li><a href="#team">Team</a></li>
-                <li><a href="#contact">Contato</a></li>
+                    <li className="menu-active"><a href="#home">Home</a></li>
+                    <li><a href="#about">Sobre Nós</a></li>
+                    <li><a href="#services">Serviços</a></li>
+                    <li><a href="#team">Team</a></li>
+                    <li><a href="#contact">Contato</a></li>
+                    <li><Link to="/teste">Geração Album</Link></li>
                 </ul>
             </nav>
             </div>
