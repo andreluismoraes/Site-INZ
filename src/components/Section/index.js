@@ -14,9 +14,11 @@ const Section = () => (
                 <div className="carousel-background"><img src="assets/img/intro-carousel/1.jpg" alt=""/></div>
                 <div className="carousel-container">
                   <div className="carousel-content">
-                    <h2>We are professional</h2>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-                    <a href="#featured-services" className="btn-get-started scrollto">Get Started</a>
+                    <h2>Nós somos Profissionais</h2>
+                    <p>
+                      Usamos sempre as melhores tecnologias para atingir o seu sucesso!
+                    </p>
+                    <a href="#servides" className="btn-get-started scrollto">Serviços</a>
                   </div>
                 </div>
               </div>
