@@ -13,7 +13,7 @@ const Header = () =>(
 
             <nav id="nav-menu-container">
                 <ul className="nav-menu">
-                    <li className="menu-active"><a href="#home">Home</a></li>
+                    <li><Link to="/">Home</Link></li>
                     <li><a href="#about">Sobre Nós</a></li>
                     <li><a href="#services">Serviços</a></li>
                     <li><a href="#team">Team</a></li>

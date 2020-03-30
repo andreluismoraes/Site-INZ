@@ -33,8 +33,7 @@ const Teste = () =>{
                     {album.map(itemAlbum => (
                         <div key={itemAlbum.id} className="item-user">
                             <p>{itemAlbum.title}</p>
-                            <p>{itemAlbum.id}</p>
-                            <img src={itemAlbum.thumbnailUrl}/>
+                            <img src={itemAlbum.thumbnailUrl} alt={itemAlbum.title}/>
                         </div>
                     ))}
                 </div>
