@@ -18,7 +18,8 @@ const Header = () =>(
                     <li><a href="#services">Serviços</a></li>
                     <li><a href="#team">Team</a></li>
                     <li><a href="#contact">Contato</a></li>
-                    <li><Link to="/teste">Geração Album</Link></li>
+                    <li><Link to="/album">Geração Album</Link></li>
+                    <li><Link to="/firebase">Geração Firebase</Link></li>
                 </ul>
             </nav>
             </div>

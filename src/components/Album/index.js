@@ -5,9 +5,8 @@ import Footer from '../Footer'
 import { useState } from 'react'
 import { useEffect } from 'react'
 import './style.css'
-import firebase from '../../server/config'
 
-const Teste = () =>{
+const Album = () =>{
     const [album, setAlbum] = useState([])
     const [qtd, setQtd] = useState(1)
     const [load, setLoad] = useState(false)
@@ -24,14 +23,6 @@ const Teste = () =>{
         setLoad(false)
         setAlbum([...album, ...partsAlbum])
         setQtd(qtd + 4)
-    }
-
-    const teste = async () =>{
-        const db = firebase.firestore()
-        const dados = await db.collection('projects').get()
-        dados.forEach((doc) =>{
-            console.log(doc.data())
-        })
     }
 
     useEffect(() =>{
@@ -53,7 +44,7 @@ const Teste = () =>{
         <Fragment>
             <Header/>
             <button onClick={handleAlbum}>Mostrar + 4 Albuns</button> <h1>{carregando}</h1>
-            <button onClick={teste}>Testar</button>
+            <h1>Geração de Albuns do JsonPlaceholder</h1>
                 <div className="user">
                     {album.map(itemAlbum => (
                         <div key={itemAlbum.id} className="item-user">
@@ -67,4 +58,4 @@ const Teste = () =>{
     )
 }
 
-export default Teste
+export default Album

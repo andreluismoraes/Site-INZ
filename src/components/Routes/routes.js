@@ -1,14 +1,16 @@
 import React from 'react'
 import { BrowserRouter, Switch, Route } from 'react-router-dom'
 import Home from '../Home'
-import Teste from '../Teste'
+import Album from '../Album'
+import Firebase from '../Firebase'
 
 const Routes = () =>{
     return(
         <BrowserRouter>
             <Switch>
                 <Route path="/"  exact component={Home}/>
-                <Route path="/teste"  exact component={Teste}/>
+                <Route path="/album"  component={Album}/>
+                <Route path="/firebase" component={Firebase}/>
             </Switch>
         </BrowserRouter>
     )
