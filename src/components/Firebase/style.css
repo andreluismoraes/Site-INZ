@@ -2,13 +2,9 @@
     margin: 0 auto;
     margin-top: 100px;
     display: grid;
-    grid-template-columns: repeat(4, 1fr);  
+    grid-template-columns: repeat(3, 1fr);  
     grid-gap: 20px;
     max-width: 1280px;
-}
-
-button{
-    margin-top: 100px;
 }
 
 .item-firebase{
@@ -19,4 +15,5 @@ button{
     height: 20vh;
     text-align: center;
     margin-bottom: 10px;
+    box-sizing: border-box;
 }
