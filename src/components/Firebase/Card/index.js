@@ -1,6 +1,6 @@
 import React, { Fragment } from 'react'
 import {Link} from 'react-router-dom'
-
+import ChangeUser from '../changeUser'
 
 const Card = ({rest}) =>{
 
@@ -8,7 +8,7 @@ const Card = ({rest}) =>{
         <Fragment>
             <div className="item-firebase">
                 <p>{rest.content}</p> 
-                <Link to="/firebase/alterar">Alterar</Link>
+                <Link to={`/firebase/user/${rest.id}`}><button>Alterar</button></Link>
             </div>
         </Fragment>
     )
