@@ -1,14 +1,13 @@
 import React, { Fragment } from 'react'
-
-import Header from '../Header'
-import Footer from '../Footer'
-import './style.css'
-import firebase from '../../server/config'
 import { useEffect } from 'react'
 import { useState } from 'react'
-import Card from './Card'
 
-const Firebase = () =>{
+import Header from '../../Header'
+import Footer from '../../Footer'
+import firebase from '../../../server/config'
+import Card from '../Card'
+
+const AllCard = () =>{
     const [content, setContent] = useState("")
     const [user, setUser] = useState([])
     const [change, setChange] = useState(false)
@@ -56,4 +55,4 @@ const Firebase = () =>{
     )
 }
 
-export default Firebase
+export default AllCard

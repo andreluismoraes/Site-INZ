@@ -1,3 +1,64 @@
+/*configuração css sem templaete*/
+
+.album{
+  margin: 0 auto;
+  margin-top: 15px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);  
+  grid-gap: 20px;
+  max-width: 1280px;
+}
+
+button{
+  margin-top: 100px;
+}
+
+.item-album{
+  display: flex;
+  background-color: #4285F4;
+  color: #e3f2fd;
+  width: 100%;
+  height: 20vh;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.item-album img{
+  border-radius: 50px;
+  width: 60px;
+  height: 60px;
+  position: relative;
+  margin-top: 120px;
+}
+
+img:hover{
+  cursor: pointer;
+}
+
+.firebase{
+  margin: 0 auto;
+  margin-top: 100px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);  
+  grid-gap: 20px;
+  max-width: 1280px;
+}
+
+.item-firebase{
+  display: flex;
+  background-color: #4285F4;
+  color: #e3f2fd;
+  width: 100%;
+  height: 20vh;
+  text-align: center;
+  margin-bottom: 10px;
+  box-sizing: border-box;
+}
+
+
+
+
+/*fim configuração css sem templaete*/
 body {
   background: #fff;
   color: #666666;

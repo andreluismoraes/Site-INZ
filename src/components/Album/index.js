@@ -4,7 +4,6 @@ import Header from '../Header'
 import Footer from '../Footer'
 import { useState } from 'react'
 import { useEffect } from 'react'
-import './style.css'
 
 const Album = () =>{
     const [album, setAlbum] = useState([])
@@ -45,9 +44,9 @@ const Album = () =>{
             <Header/>
             <button onClick={handleAlbum}>Mostrar + 4 Albuns</button> <h1>{carregando}</h1>
             <h1>Geração de Albuns do JsonPlaceholder</h1>
-                <div className="user">
+                <div className="album">
                     {album.map(itemAlbum => (
-                        <div key={itemAlbum.id} className="item-user">
+                        <div key={itemAlbum.id} className="item-album">
                             <p>{itemAlbum.title}</p>
                             <img src={itemAlbum.thumbnailUrl} alt={itemAlbum.title}/>
                         </div>
