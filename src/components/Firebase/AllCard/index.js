@@ -43,7 +43,7 @@ const AllCard = () =>{
                 <button onClick={handleCad}>Cadastro</button>  
                 <input type="text" placeholder="content" onChange={(content) => setContent(content.target.value)}/>
                 <h1>Firebase</h1>
-                <div className="firebase">  
+                <div className="album">  
                 {user.map(itemUser => (
                         <div key={itemUser.id}>
                             <Card id={itemUser.id} rest={itemUser}/>

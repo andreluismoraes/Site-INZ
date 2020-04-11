@@ -5,7 +5,7 @@ const Card = ({rest}) =>{
 
     return(
         <Fragment>
-            <div className="item-firebase">
+            <div className="item-album">
                 <p>{rest.content}</p> 
                 <Link to="/updateCard/teste"><button type="submit">Alterar</button></Link> 
             </div>
